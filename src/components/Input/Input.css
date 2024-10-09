@@ -1,0 +1,44 @@
+/* Form Styling */
+.form {
+    display: flex;
+    width: 100%; /* Full width */
+    border-top: 2px solid #00ccff; /* Separator line */
+    background-color: #262626; /* Dark background */
+    padding: 10px;
+    border-radius: 0 0 8px 8px; /* Rounded only at the bottom */
+    box-sizing: border-box;
+  }
+  
+  /* Input Field */
+  .input {
+    border: none;
+    background-color: #333333; /* Dark input field background */
+    color: #ffffff; /* White text */
+    padding: 15px;
+    width: 90%; /* Take up most of the space */
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 1px solid #00ccff; /* Blue border on focus */
+  }
+  
+  /* Send Button */
+  .sendButton {
+    background-color: #00ccff; /* Blue send button */
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sendButton:hover {
+    background-color: #008bbd; /* Darker blue on hover */
+  }
+  

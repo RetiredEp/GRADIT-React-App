@@ -1,0 +1,54 @@
+/* Message Container */
+.messageContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  
+  /* Align Message to the Start (left for the other user) */
+  .justifyStart {
+    justify-content: flex-start;
+  }
+  
+  /* Align Message to the End (right for self) */
+  .justifyEnd {
+    justify-content: flex-end;
+  }
+  
+  /* Message Box (shared styles) */
+  .messageBox {
+    max-width: 80%;
+    border-radius: 8px;
+    padding: 5px;
+    color: #ffffff; /* White text */
+    background-color: #555555; /* Darker message box */
+    overflow-wrap: break-word; /* Wrap long messages */
+  }
+  
+  /* Sent Text (usernames) */
+  .sentText {
+    display: inline-block;
+    font-size: 14px;
+    color: #888888; /* Lighter gray for usernames */
+    margin-left: 10px;
+  }
+  
+  .pl-10 {
+    margin-left: 10px; /* Padding for the left side of text */
+  }
+  
+  /* Self Message (right side, customized) */
+  .messageContainer.justifyEnd .messageBox {
+    background-color: #00ccff; /* Highlighted color for own messages */
+  }
+  
+  .messageContainer.justifyEnd .sentText {
+    order: 2; /* Username on the right side for self */
+  }
+  
+  /* Other User's Message (left side, default) */
+  .messageContainer.justifyStart .sentText {
+    order: 1; /* Username on the left side */
+  }
+  
