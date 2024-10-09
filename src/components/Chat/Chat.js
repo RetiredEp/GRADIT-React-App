@@ -20,7 +20,7 @@ const Chat = () => {
   useEffect(() => {
     const { name, room } = queryString.parse(location.search); // Parse the search params
 
-    socket = io("http://localhost:5000"); // Connect to the server
+    socket = io("https://gradit-server.onrender.com"); // Connect to the server
 
     setName(name); // Set the name
     setRoom(room); // Set the room
